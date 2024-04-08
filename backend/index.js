@@ -25,7 +25,7 @@ const db= mysql2.createConnection({
     user:"root",
     password:"admin@2003",
     database:"eventcms",
-    port:3001
+    port:"3001"
 })
 
 app.get("/eventAPI",(req,res)=>{
