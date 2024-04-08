@@ -21,10 +21,11 @@ const upload=multer({
     storage:storage
 })
 const db= mysql2.createConnection({
-    host:"localhost",
+    host:"127.0.0.1",
     user:"root",
     password:"admin@2003",
-    database:"eventcms"
+    database:"eventcms",
+    port:3001
 })
 
 app.get("/eventAPI",(req,res)=>{
